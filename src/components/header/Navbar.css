@@ -1,0 +1,27 @@
+.nav2{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.navlogo{
+
+    height: 1.3rem;
+}
+
+.link1{
+    width: 15px;
+}
+.link2{
+    width: 19px;
+}
+.link3{
+    width: 23px;
+}
+.link4{
+    width: 23px;
+}
+
+
+
