@@ -174,7 +174,7 @@ export const Post = ({ name, age, note }) => {
          </span>
         </div>
         <hr />
-        <div className="flex justify-evenly py-1">
+        <div className="flex justify-evenly text-xs lg:text-sm py-1">
           <button className="flex gap-1 opacity-70 hover:bg-slate-300 w-[20%] justify-center py-3 rounded-sm ">
             <img className="w-[20px] " src="https://cdn1.iconfinder.com/data/icons/office-and-business-14/48/100-512.png" alt="" />
             <span>Like</span>
