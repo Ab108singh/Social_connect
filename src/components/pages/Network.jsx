@@ -112,10 +112,17 @@ const Network = () => {
           </div>
           <div className="w-[100%] h-[.1px] bg-slate-200 "></div>
            <Invitations/>
-
+           <Invitations/>
+        
 
         </div>
-           <div className=" box my-4 mb-[23px] h-fit flex flex-wrap justify-center  ">
+           <div className=" box my-4 mb-[23px] gap-3 content-start h-fit flex flex-wrap justify-center  ">
+            <div className="w-[100%] pl-4 pt-2 ">People in the IT Services and IT Consulting industry you may know -</div>
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
             
             
@@ -142,16 +149,49 @@ export default Network;
 
  export const Post=({name,age,note})=>{
  return (
-  <div className="box m-1 h-[200px] w-[170px] bg-slate-400 rounded-md box my-3 ">
-      
+  <div className="box pb-5 m-1 sm:w-[44%] md:w-[30%]  rounded-md box  ">
+     <div className="w-[100%]">
+              <div className="h-[80px]">
+                <img
+                  className="h-[70px] w-[100%]"
+                  src="https://media.licdn.com/dms/image/D5616AQEdi3ggnWOcPQ/profile-displaybackgroundimage-shrink_350_1400/0/1705070102947?e=1714003200&v=beta&t=TA6Qn-3mJxxXiZgslsuQiHhclCFpvrrdvu9KifOYfYQ"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col  items-center">
+                <img
+                  className="w-[80px] rounded-full mt-[-46px] border-white border-2"
+                  src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g"
+                  alt=""
+                />
+                <button>Kalpna Shrivastav</button>
+                <span className="text-xs text-center text-stone-400">
+                  Android Developer and Freelancer
+                </span>
+              </div>
+            </div>
+      <p className="my-5 text-center text-xs text-slate-400">15 mutual connections</p>      
+      <div className="flex justify-center">
+        <button className="text-blue-700 flex justify-center w-[80%] border-blue-400 border-[2px] py-1 rounded-full "> 
+        <div className="flex items-center">
+        <img className="w-[8px] h-[16px] " src="https://cdn0.iconfinder.com/data/icons/ui-blue/200/Untitled-5-512.png" alt="" />
+       <span>+Connect</span>
+        </div>
+        </button>
+      </div>
+
   </div>
  )
 }
 
 
+
+
+
+
 export const Invitations =()=>{
  return (
-  <div className="px-3 py-4 flex flex-wrap justify-between">
+  <div className="px-3  py-4 flex flex-wrap justify-between">
    
    <div className="flex gap-4 w-[100%] max-w-[500px] ">
     <img className="w-[64px] h-[64px] rounded-full  " src="https://media.licdn.com/dms/image/D5603AQFAn4SR7YSE9g/profile-displayphoto-shrink_800_800/0/1707575650870?e=1714003200&v=beta&t=Sy4Q_5AqFjvV53TbzCRJpD-P0n24yPf5nr6n2OCsd2Q" alt="" />
