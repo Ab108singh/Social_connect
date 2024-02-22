@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <header className="w-screen bg-slate-300 h-[60px] flex justify-center text-sm items-center">
+    <header className="w-screen bg-white h-[60px] flex justify-center text-sm items-center">
       <nav className="flex pl-5 w-[100%] lg:w-[80%]  justify-between items-center  ">
 
         <section className="  flex gap-[20px] w-[30%]   ">
@@ -14,23 +14,23 @@ const Navbar = () => {
             alt=""
           />
           </Link>
-          <div className=" max-w-[300px] sm:w-[20px] md:w-[170px] lg:w-[200px] xl:w-[300px] h-[31px] rounded-md md:bg-white xl:bg-white flex items-center  ">
+          <div className=" max-w-[300px] sm:w-[20px] md:w-[170px] lg:w-[200px] xl:w-[300px] h-[31px] rounded-md md:bg-slate-200 xl:bg-slate-200 flex items-center  ">
           
            <img
               className="w-[25px] "
               src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/search-512.png"
               alt=""
             />
-          
+           <input className="text-sm w-[100%] h-[100%] rounded-lg border-none bg-slate-200 outline-none " type="text" placeholder="search here.." />
 
           </div>
         </section>
 
 
 
-        <section className="flex gap-[23px] xl:gap-[80px] justify-around md:justify-end sm:text-xs text-sm  w-[72%] md:w-[55%] ">
+        <section className="flex gap-[23px]  xl:gap-[80px] justify-around md:justify-end sm:text-xs text-sm  w-[72%] md:w-[55%] ">
          <Link to={"/"}>
-         <div className="nav2 ">
+         <div className="nav2 opacity-60 hover:opacity-100 ">
             <div>
               {" "}
               <img
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
          </Link>
           <Link to={"/networks"}>
-          <div className="nav2  ">
+          <div className="nav2 opacity-60 hover:opacity-100  ">
             <svg
               className="navlogo "
               xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +57,8 @@ const Navbar = () => {
             <div className="hidden sm:block">My.network</div>
           </div>
           </Link>
-          <Link to={"/"}>
-          <div className="nav2  ">
+          <Link to={"/jobs"}>
+          <div className="nav2 opacity-60 hover:opacity-100  ">
             <svg
               className="navlogo  "
               xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +72,8 @@ const Navbar = () => {
             <div className="hidden sm:block">Jobs</div>
           </div>
           </Link>
-         <Link to={"/"}>
-         <div className="nav2  ">
+         <Link to={"/massaging"}>
+         <div className="nav2 opacity-60 hover:opacity-100  ">
             <svg
               className="navlogo"
               xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +87,8 @@ const Navbar = () => {
             <div className="hidden sm:block">Messaging</div>
           </div>
          </Link>
-         <Link className=" ">
-         <div className="nav2 w-[45px] ">
+         <Link to={"/notification"} className=" ">
+         <div className="nav2 w-[45px] opacity-60 hover:opacity-100 ">
             <div> 
               
               <img
@@ -107,8 +107,8 @@ const Navbar = () => {
 
 
         
-        <section className="pl-[23px] gap-3 w-[24%] hidden sm:flex sm:text-[11px] md:text-[13px] justify-around items-center ">
-          <Link className="w-[23px] ">
+        <section className="pl-[23px] gap-3 opacity-70 w-[24%] hidden sm:flex sm:text-[11px] md:text-[13px] justify-around items-center ">
+          <Link to={"/profile"} className="w-[23px] ">
           <div>
             <div >
                 <img className="rounded-full w-[40px]" src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g" alt="" />
@@ -117,13 +117,13 @@ const Navbar = () => {
           </div>
           </Link>
             <div className="h-[63px] w-[1px] mx-1 bg-slate-800 border-slate-400 border  "></div>
-            <Link className="w-[23px] ">
+            <Link to={"/business"} className="w-[23px] ">
           <div className="flex flex-col  items-center justify-center">
             <img className="w-[25px]  " src="https://cdn4.iconfinder.com/data/icons/web-design-device-solid-style-set-2/91/Web_-_Design_-_Device_82-512.png" alt="" />
             <div>Business&#9660;</div>
           </div>
             </Link>
-          <Link >
+          <Link to={"/postjob"} >
           <div className="flex flex-col mt-[-6px] w-[64px] items-center justify-center">
             <img className="w-[25px] h-[15px] mt-3 mb-1 " src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-52-512.png" alt="" />
             <div className=""> Job&#9660;</div>

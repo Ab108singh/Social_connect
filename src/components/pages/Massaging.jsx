@@ -3,7 +3,7 @@ import Navbar from "../header/Navbar";
 import "./Home.css";
 import Footer from "./Footer";
 
-const Home = () => {
+const Massaging = () => {
   return (
     <div className="">
       <Navbar />
@@ -132,7 +132,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Massaging;
 
 export const Post = ({ name, age, note }) => {
   return (
