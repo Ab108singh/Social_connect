@@ -113,11 +113,15 @@ const Network = () => {
           <div className="w-[100%] h-[.1px] bg-slate-200 "></div>
            <Invitations/>
            <Invitations/>
+           <Invitations/>
         
 
         </div>
            <div className=" box my-4 mb-[23px] gap-3 content-start h-fit flex flex-wrap justify-center  ">
             <div className="w-[100%] pl-4 pt-2 ">People in the IT Services and IT Consulting industry you may know -</div>
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
@@ -164,7 +168,7 @@ export default Network;
                   src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g"
                   alt=""
                 />
-                <button>Kalpna Shrivastav</button>
+                <button className="hover:underline">Kalpna Shrivastav</button>
                 <span className="text-xs text-center text-stone-400">
                   Android Developer and Freelancer
                 </span>
@@ -172,8 +176,8 @@ export default Network;
             </div>
       <p className="my-5 text-center text-xs text-slate-400">15 mutual connections</p>      
       <div className="flex justify-center">
-        <button className="text-blue-700 flex justify-center w-[80%] border-blue-400 border-[2px] py-1 rounded-full "> 
-        <div className="flex items-center">
+        <button className="text-blue-700 hover:bg-blue-200 flex justify-center w-[80%] border-blue-400 border-[2px] py-1 rounded-full "> 
+        <div className="flex items-center ">
         <img className="w-[8px] h-[16px] " src="https://cdn0.iconfinder.com/data/icons/ui-blue/200/Untitled-5-512.png" alt="" />
        <span>+Connect</span>
         </div>

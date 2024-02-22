@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
           </div>
           </Link>
-            <div className="h-[63px] w-[1px] mx-1 bg-slate-800 border-slate-400 border  "></div>
+            <div className="h-[63px] w-[1px] mx-2  border-slate-300 border  "></div>
             <Link to={"/business"} className="w-[23px] ">
           <div className="flex flex-col  items-center justify-center">
             <img className="w-[25px]  " src="https://cdn4.iconfinder.com/data/icons/web-design-device-solid-style-set-2/91/Web_-_Design_-_Device_82-512.png" alt="" />
