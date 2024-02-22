@@ -21,7 +21,7 @@ const Navbar = () => {
               src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/search-512.png"
               alt=""
             />
-           <input className="text-sm w-[100%] h-[100%] rounded-lg border-none bg-slate-200 outline-none " type="text" placeholder="search here.." />
+           <input className="text-sm w-[100%] h-[100%] rounded-lg border-none bg-slate-200 outline-none hidden lg:block " type="text" placeholder="search here.." />
 
           </div>
         </section>
@@ -111,7 +111,7 @@ const Navbar = () => {
           <Link to={"/profile"} className="w-[23px] ">
           <div>
             <div >
-                <img className="rounded-full w-[40px]" src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g" alt="" />
+                <img className="rounded-full w-[40px]" src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4" alt="" />
                 <div>Me&#9660;</div>
             </div>
           </div>

@@ -23,14 +23,14 @@ const Home = () => {
               <div className="flex flex-col  items-center">
                 <img
                   className="w-[80px] rounded-full mt-[-46px] border-white border-2"
-                  src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g"
+                  src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
                   alt=""
                 />
                 <button className="font-bold hover:underline text-stone-600">
-                  Kalpna Shrivastav
+                  Abhay Singh
                 </button>
                 <span className="text-xs text-stone-400">
-                  Android Developer and Freelancer
+                  C++ || DSA || Javascript || Reactjs
                 </span>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
             <div className="h-[70px] flex justify-between items-center px-4 ">
               <img
                 className="w-[55px] rounded-full h-[55px] "
-                src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708956000&v=beta&t=1NmgBiyhol0Tt55JYk0j0ExagTbtYUgo8JgEMlU6yuM"
+                src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
                 alt=""
               />
               <div className="w-[88%] h-[50px] hover:bg-slate-200 border border-slate-400 rounded-full "></div>
