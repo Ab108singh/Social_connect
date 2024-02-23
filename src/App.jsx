@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Navbar from './components/header/Navbar'
 import Home from './components/pages/Home'
 import Jobs from './components/pages/Jobs'
@@ -13,19 +13,19 @@ import Postjob from './components/pages/Postjob'
 import Massaging from './components/pages/Massaging'
 import Loginnav from './components/login/Loginnav'
 import Login from './components/login/Login'
+import { LoginContext } from './components/LoginContext'
+import Loginform from './components/login/Loginform'
 
 const App = () => {
  
-  const[login,setLogin]=useState(false);
- const setlogin =()=>{
-  setLogin(true);
- }
+  let{login,makelogin}=useContext(LoginContext);
+ 
 
   return (
     <div className='  '>
       <Routes>
-       
-        <Route path={"/"} element={login?<Home/>:<Login setlogin={setlogin}/>} />
+       <Route path='/signin|login' element={<Loginform/>}/>
+        <Route path={"/"} element={login?<Home/>:<Login />} />
         <Route path={"/networks"} element={<Network/>}/>
         <Route path={"/jobs"} element={<Jobs/>}/>
         <Route path={"/massaging"} element={<Massaging/>}/>
