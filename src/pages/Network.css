@@ -1,0 +1,24 @@
+
+
+.homeprofile{
+ 
+    border-radius: 10px;
+    }
+    .homescrollbar{
+    height: 000px;
+     
+     border-radius: 12px;
+    }
+    
+    .homefooter{
+       
+        height: 500px;
+        
+        border-radius: 8px;
+    }
+    .box{
+        border:0.1px solid rgb(212, 210, 210);
+        background-color: white;  
+        box-shadow: 1px 0 rgb(236, 234, 234);
+        overflow: hidden;
+    }
