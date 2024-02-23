@@ -6,7 +6,11 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="">
+   
       <Navbar />
+
+
+    
       <div className="flex flex-wrap gap-[20px]  justify-center mt-[30px] ">
         {/* this is first section-------------------------------------------------------- */}
         <section className="  homeprofile  w-[100%]  sm:w-[75%] md:w-[30%] lg:w-[20%] xl:w-[20%] xl:max-w-[250px] ">

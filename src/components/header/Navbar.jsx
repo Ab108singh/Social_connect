@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <header className="w-screen bg-white h-[60px] flex justify-center text-sm items-center">
+    <header className="w-screen bg-white h-[60px] flex justify-center text-sm items-center sticky top-0">
       <nav className="flex pl-5 w-[100%] lg:w-[80%]  justify-between items-center  ">
 
         <section className="  flex gap-[20px] w-[30%]   ">
