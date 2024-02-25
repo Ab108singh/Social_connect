@@ -22,12 +22,12 @@ const links = [
     },
     {
         text: "Messages",
-        path: "/messages",
+        path: "/massaging",
         icon: <IoChatboxEllipses size={21} />,
     },
     {
         text: "Notifications",
-        path: "/notifications",
+        path: "/notification",
         icon: <FaBell size={21} />,
     },
 ];
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </section>
 
                 <section className="flex items-center justify-end gap-5 flex-1 divide-x-2 divide-slate-200 divide-solid">
-                    <section className="flex gap-[10px] sm:gap-[15px] md:gap-5 lg:gap-6  w-[73%] justify-end">
+                    <section className="flex gap-[20px] sm:gap-[25px] md:gap-4 lg:gap-7  w-[73%] justify-around sm:justify-end">
                         {links.map((link) => {
                             return (
                                 <Link to={link.path}>
@@ -74,11 +74,11 @@ const Navbar = () => {
                         })}
                     </section>
 
-                    <section className="flex w-[26%] gap-2 md:gap-3 lg:gap-5 justify-end items-center">
+                    <section className="md:flex w-[26%] gap-2 md:gap-2 lg:gap-5 justify-end hidden   items-center">
                         <Link to={"/profile"} className="">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col items-center opacity-60 hover:opacity-100">
                                 <img
-                                    className="rounded-full size-[25px] hidden md:inline-block"
+                                    className="rounded-full w-[25px] hidden sm:inline-block"
                                     src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
                                     alt=""
                                 />
@@ -87,7 +87,7 @@ const Navbar = () => {
                         </Link>
                         {/* <div className="h-[63px] w-[1px] mx-2  border-slate-300 border  "></div> */}
                         <Link to={"/business"}>
-                            <div className="flex flex-col  items-center justify-center">
+                            <div className="flex flex-col opacity-60 hover:opacity-100  items-center justify-center">
                                 <img
                                     className="w-[25px]  "
                                     src="https://cdn4.iconfinder.com/data/icons/web-design-device-solid-style-set-2/91/Web_-_Design_-_Device_82-512.png"
@@ -97,7 +97,7 @@ const Navbar = () => {
                             </div>
                         </Link>
                         <Link to={"/postjob"}>
-                            <div className="flex flex-col items-center justify-center">
+                            <div className="flex flex-col  opacity-60 hover:opacity-100 items-center justify-center">
                                 <img
                                     className="w-[25px] h-[15px] mt-3 mb-1 "
                                     src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-52-512.png"

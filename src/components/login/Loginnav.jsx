@@ -36,10 +36,10 @@ const Loginnav = () => {
 
 
      <div className='w-[60%] sm:w-[25%]  flex justify-end sm:justify-center gap-1'>
-       <Link to={'/signin|login'}>
+       <Link to={'/login'}>
        <button className='border px-4 py-1 rounded-xl text-sm hover:bg-slate-400'>Join now</button>
        </Link>
-       <Link to={'/signin|login'}>
+       <Link to={'/login'}>
        <button className='text-blue-600 text-sm border-blue-700 border px-4 py-1 rounded-xl hover:bg-blue-200'>Sign in</button>
        </Link>
         </div>

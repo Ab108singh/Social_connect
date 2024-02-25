@@ -18,14 +18,15 @@ import { LoginContext } from "./components/LoginContext";
 import Loginform from "./components/login/Loginform";
 
 const App = () => {
-    let { login, makelogin } = useContext(LoginContext);
-
+    let { login} = useContext(LoginContext);
+    
+    
     return (
         <div className="  ">
             <Routes>
                 <Route path="/login" element={<Loginform />} />
-                <Route path={"/"} element={login ? <Home /> : <Login />} />
-                <Route path={"/networks"} element={<Network />} />
+                <Route path={"/"} element={true ? <Home /> : <Login />} />
+                <Route path={"/network"} element={<Network />} />
                 <Route path={"/jobs"} element={<Jobs />} />
                 <Route path={"/massaging"} element={<Massaging />} />
                 <Route path={"/notification"} element={<Notification />} />

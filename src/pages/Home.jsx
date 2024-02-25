@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/header/Navbar";
 import "./Home.css";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -30,9 +31,10 @@ const Home = () => {
                   src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
                   alt=""
                 />
-                <button className="font-bold hover:underline text-stone-600">
+                
+                <Link to={'/profile'} className="font-bold hover:underline text-stone-600">
                   Abhay Singh
-                </button>
+                </Link>
                 <span className="text-xs text-stone-400">
                   C++ || DSA || Javascript || Reactjs
                 </span>
