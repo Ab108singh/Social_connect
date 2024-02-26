@@ -2,14 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/header/Navbar";
+import { FaChartBar, FaCocktail, FaEye, FaSatelliteDish, FaSearch } from "react-icons/fa";
+import { IoPeople, IoPeopleCircle } from "react-icons/io5";
 
 const Profile = () => {
   return (
     <div>
       <Navbar />
       <div className="w-[100%] mt-5 gap-x-7  gap-y-2    flex justify-center flex-wrap px-0  md:px-16">
-        <section className=" flex-grow-0 shadow-slate-400  shadow-sm   sm:flex-grow max-w-[550px]   md:max-w-[800px]   bg-white  w-[99%] md:w-[50%] rounded-lg overflow-hidden ">
-          <div className="w-[100%]  ">
+        <section className=" flex-grow-0   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
+          <div className="w-[100%] bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden   ">
             <div className="">
               <img
                 className="h-[55%] w-[100%]"
@@ -66,7 +68,7 @@ const Profile = () => {
                 {" "}
                 Open to
               </button>
-              <button className="px-4 py-1 border-blue-500 border-2 rounded-full text-blue-600 font-bold hover:bg-blue-100 ">
+              <button className="px-4 py-1 border-blue-400 border-[1px] rounded-full text-blue-600 font-bold hover:bg-blue-100 ">
                 {" "}
                 Add profile section
               </button>
@@ -94,15 +96,95 @@ const Profile = () => {
                   Show job
                 </button>
               </div>
-             
-             
             </div>
           </div>
-           <div>
-            
-           </div>
+          <div className="w-[100%]  bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden  mt-4 ">
+            <div className="p-4">
+              <p className="text-2xl font-semibold text-stone-600">Anasytics</p>
+              <p className="opacity-65 flex items-center gap-2">
+                <FaEye /> <span>Private to you </span>
+              </p>
+            </div>
+
+            <div className="w-[100%] px-4 flex flex-wrap opacity-75 gap-y-4 gap-x-2 ">
+              <div className="min-w-[400px] flex  gap-2 ">
+                <div className="pt-2">
+                  <IoPeople size={"23"} />
+                </div>
+                <div>
+                  <p className="font-semibold">228 profile views</p>
+                  <p>Discover who's viewed your profile.</p>
+                </div>
+              </div>
+              <div className="min-w-[400px] flex gap-2  ">
+                <div className="pt-2">
+                  <FaChartBar size={"23"} />
+                </div>
+                <div>
+                  <p className="font-semibold">228 profile views</p>
+                  <p>Discover who's viewed your profile.</p>
+                </div>
+              </div>
+              <div className="max-w-[400px] flex gap-2 ">
+                <div className="pt-2">
+                  <FaSearch size={"23"} />
+                </div>
+                <div>
+                  <p className="font-semibold">228 profile views</p>
+                  <p>Discover who's viewed your profile.</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-[100%] mt-3 bg-stone-300 h-[1px] "></div>
+            <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">Show all analytics &rarr;</div>
+          </div>
 
 
+
+          <div className="w-[100%]  bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden  mt-4 ">
+            <div className="p-4">
+              <p className="text-2xl font-semibold text-stone-600">Resources</p>
+              <p className="opacity-65 flex items-center gap-2">
+                <FaEye /> <span>Private to you </span>
+              </p>
+            </div>
+
+            <div className="w-[100%] px-4 flex flex-wrap opacity-75 gap-y-4 gap-x-2 ">
+              
+            <div className="max-w-[400px] flex gap-2 ">
+                <div className="pt-2">
+                  <FaSatelliteDish size={"23"} />
+                </div>
+                <div>
+                  <p className="font-semibold">Creator mode <span className="bg-stone-300 rounded-md px-1">Off</span> </p>
+                  <p>Discover who's viewed your profile.</p>
+                </div>
+              </div>
+              <div className="w-[100%]  bg-stone-300 h-[1px] "></div>
+             
+              <div className="min-w-[400px] flex  gap-2 ">
+                <div className="pt-2">
+                  <IoPeople size={"23"} />
+                </div>
+                <div>
+                  <p className="font-semibold">My network</p>
+                  <p>See and manage your connections and interests.</p>
+                </div>
+              </div>
+             
+              
+            </div>
+            <div className="w-[100%] mt-3 bg-stone-300 h-[1px] "></div>
+            <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">Show all 5 Resources &rarr;</div>
+          </div>
+
+
+
+          
+          <div>
+
+
+          </div>
         </section>
 
         <section className="h-[500px] shadow-slate-400  shadow-sm bg-white w-[99%] md:w-[250px]  max-w-[550px]   md:max-w-[800px] rounded-lg overflow-hidden "></section>
