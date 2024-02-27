@@ -3,6 +3,8 @@ import Navbar from "../components/header/Navbar";
 import "./Home.css";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { FaBookmark, FaPeopleArrows, FaSave } from "react-icons/fa";
+import { HiUserGroup } from "react-icons/hi";
 
 const Home = () => {
   return (
@@ -61,24 +63,58 @@ const Home = () => {
                   113
                 </span>
               </div>
-              <div className="w-[100%] my-2 h-[1px] bg-slate-200"></div>
-              <div className="w-[100%] my-2 h-[1px] bg-slate-200"></div>
+              <div className="flex items-center gap-2 pl-6 mt-2 py-2 border-t-2  hover:bg-slate-300 opacity-75 "> 
+              <FaBookmark/>
+              <p>my items</p>
+              </div>
             </div>
           </div>
 
           {/* this is second box in this section ---- */}
           <div
             id="hl2"
-            className="box md:flex justify-center h-[54%] sm:hidden  rounded-lg "
+            className="box md:flex flex-col  text-stone-600  sm:hidden  rounded-lg "
           >
-            this is something else
+            <div className="my-4 px-4">
+              <p className="text-sm font-semibold">recent</p>
+              <div className="flex items-center my-1 gap-2">
+              <HiUserGroup size={13}/>
+              <span className="text-xs">JavaScript</span>
+              </div>
+              <div className="flex items-center my-1 gap-2">
+              <HiUserGroup size={13}/>
+              <span className="text-xs">business analysis</span>
+              </div>
+              <div className="flex items-center my-1 gap-2">
+              <HiUserGroup size={13}/>
+              <span className="text-xs">Explore world</span>
+              </div>
+            </div>
+            <div className="my-4 px-4">
+              <p className="text-sm font-semibold text-blue-600 hover:underline">Groups</p>
+              <div className="flex items-center gap-2">
+              <HiUserGroup size={13}/>
+              <span className="text-xs">JavaScript</span>
+              </div>
+            </div>
+            <div className="my-4 px-4">
+              <p className="text-sm font-semibold text-blue-600 hover:underline">Events +</p>
+              <div className="flex items-center gap-2">
+              <HiUserGroup size={13}/>
+              <span className="text-xs">JavaScript</span>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-2  mt-2 py-2 border-t-2  hover:bg-slate-300 opacity-75 "> 
+             
+              <p>Discover more</p>
+              </div>
           </div>
         </section>
 
         {/* this is second section in home component --------------------------------------- */}
         <section className=" homescrollbar  w-[100%]   sm:w-[75%] md:w-[55%] lg:w-[40%] xl:w-[40%] xl:max-w-[550px] ">
           <div id="post" className="box h-[120px] rounded-md ">
-            <div className="h-[70px] flex justify-between items-center px-4 ">
+            <div className="h-[70px] flex justify-between gap-2 items-center px-4 ">
               <img
                 className="w-[55px] rounded-full h-[55px] "
                 src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
@@ -121,7 +157,7 @@ const Home = () => {
         </section>
 
         <section className=" homefooter w-[100%] hidden  sm:hidden lg:flex flex-col    sm:w-[85%] md:w-[25%] lg:w-[25%] xl:w-[25%] xl:max-w-[300px] ">
-          <div className="box h-[300px] rounded-lg px-3 py-5 ">
+          <div className="box  rounded-lg px-3 py-5 ">
             <p className="font-bold">Linked tip for you ...</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa
@@ -130,6 +166,9 @@ const Home = () => {
               voluptatem eligendi tenetur cumque vitae? Dolor et sit quas alias
               unde!
             </p>
+          </div>
+          <div className="box mt-2  rounded-lg  ">
+            <img className="h-[200px]" src="https://storage.googleapis.com/website-production/uploads/2023/05/linkedin-video-ads.webp" alt="" />
           </div>
           <Footer />
         </section>
@@ -182,7 +221,7 @@ export const Post = ({ name, age, note }) => {
       <div>
         <p className="px-5 text-sm">
           {" "}
-          <span className="ml-4"></span>Lorem ipsum dolor sit amet consectetur
+          Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Perspiciatis maxime, repellat dolore non sit tenetur
           quidem temporibus quibusdam est nemo natus tempore deserunt.
         </p>

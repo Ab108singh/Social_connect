@@ -164,11 +164,11 @@ export default Network;
               </div>
               <div className="flex flex-col  items-center">
                 <img
-                  className="w-[80px] rounded-full mt-[-46px] border-white border-2"
-                  src="https://media.licdn.com/dms/image/D5635AQElPtWDfHUBhA/profile-framedphoto-shrink_400_400/0/1705070996329?e=1708916400&v=beta&t=d-8eDbWnjKK030c0g9wNbvDbRIzIZ6-x6SAJhz6S-6g"
+                  className="w-[80px] h-[80px] rounded-full mt-[-46px] border-white border-2"
+                  src="https://m.media-amazon.com/images/M/MV5BYjI4NWU0NzYtMjdmOS00MTcxLTliOTMtN2QxYTc4ZmNjZmY5XkEyXkFqcGdeQXVyMzQ3Nzk5MTU@._V1_.jpg"
                   alt=""
                 />
-                <button className="hover:underline">Kalpna Shrivastav</button>
+                <button className="hover:underline">Emma Watson</button>
                 <span className="text-xs text-center text-stone-400">
                   Android Developer and Freelancer
                 </span>
