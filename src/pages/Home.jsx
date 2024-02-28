@@ -73,7 +73,7 @@ const Home = () => {
           {/* this is second box in this section ---- */}
           <div
             id="hl2"
-            className="box md:flex flex-col  text-stone-600  sm:hidden  rounded-lg "
+            className="box md:flex flex-col  text-stone-600 hidden    rounded-lg "
           >
             <div className="my-4 px-4">
               <p className="text-sm font-semibold">recent</p>

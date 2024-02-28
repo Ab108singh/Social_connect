@@ -10,7 +10,7 @@ const Network = () => {
       <div className="flex flex-wrap gap-[30px]  justify-center mt-[30px] ">
 
         {/* this is first section-------------------------------------------------------- */}
-        <section className="  homeprofile  w-[75%] flex flex-col  sm:w-[75%] md:w-[30%] lg:w-[20%] xl:w-[20%] xl:max-w-[250px] ">
+        <section className="  homeprofile  w-[98%] flex flex-col  sm:w-[75%] md:w-[30%] lg:w-[20%] xl:w-[20%] xl:max-w-[250px] ">
           {/* this is first box in this section ---- */}
           
          <div className="w-[100%] flex flex-col   py-3 box rounded-t-lg ">
@@ -103,7 +103,7 @@ const Network = () => {
         </section>
        
        {/* this is second section in home component --------------------------------------- */}
-        <section className=" homescrollbar  w-[75%]   sm:w-[75%] md:w-[55%] lg:w-[60%] xl:w-[60%] xl:max-w-[750px] ">
+        <section className=" homescrollbar  w-[98%]   sm:w-[75%] md:w-[55%] lg:w-[60%] xl:w-[60%] xl:max-w-[750px] ">
         
         <div id="post" className="box py-2  rounded-md flex flex-col " >
           <div className="flex justify-between px-3 py-2">
@@ -153,7 +153,7 @@ export default Network;
 
  export const Post=({name,age,note})=>{
  return (
-  <div className="box pb-5 m-1 sm:w-[44%] md:w-[30%]  rounded-md box  ">
+  <div className="box pb-5 m-1 w-[45%] sm:w-[44%] md:w-[30%]  rounded-md box  ">
      <div className="w-[100%]">
               <div className="h-[80px]">
                 <img

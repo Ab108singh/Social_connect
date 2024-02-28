@@ -17,7 +17,7 @@ const Profile = () => {
     <div>
       <Navbar />
       <div className="w-[100%] mt-5 gap-x-7  gap-y-2    flex justify-center flex-wrap px-0  md:px-16">
-        <section className=" flex-grow-0 pb-5   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
+        <section className=" flex-grow-0 pb-2   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
           <div className="w-[100%] bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden   ">
             <div className="">
               <img
@@ -306,7 +306,7 @@ const Profile = () => {
          </div>
 
 
-         <div className="  text-stone-700  bg-white shadow-sm rounded-lg overflow-hidden  shadow-slate-400">
+         <div className=" mt-4 mb-3  text-stone-700  bg-white shadow-sm rounded-lg overflow-hidden  shadow-slate-400">
           <p className="m-3 text-lg font-semibold">Peoples you may know </p>
           <div>
            <Mayknow/>
@@ -484,7 +484,7 @@ export const Peoples = ()=>{
       <div className="flex flex-col gap-1">
     <p className="text-lg font-semibold ">Gupta Ji</p>
     <p className="text-sm"> Student at UIETH Punjab University </p>
-    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full px-1 text-lg border-[2px] ">+Follow</button>
+    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full  border-[2px] ">+Follow</button>
    </div>
    
 
@@ -505,7 +505,7 @@ export const Mayknow = ()=>{
       <div className="flex flex-col gap-1">
     <p className="text-lg font-semibold ">Ji Gupta</p>
     <p className="text-sm"> Student at Punjab University Swami Sarvanand Giri Regional center Hoshiarpur  </p>
-    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full px-1 text-lg border-[2px] flex items-center gap-1 justify-center "><MdPersonAddAlt1 size={20} /> connect </button>
+    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full px-1 text- border-[2px] flex items-center gap-1 justify-center "><MdPersonAddAlt1 size={15} /> connect </button>
    </div>
    
 
