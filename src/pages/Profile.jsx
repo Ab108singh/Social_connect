@@ -17,7 +17,7 @@ const Profile = () => {
     <div>
       <Navbar />
       <div className="w-[100%] mt-5 gap-x-7  gap-y-2    flex justify-center flex-wrap px-0  md:px-16">
-        <section className=" flex-grow-0 pb-2   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
+        <section className=" flex-grow-0 pb-2 z-[-1]   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
           <div className="w-[100%] bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden   ">
             <div className="">
               <img
@@ -500,7 +500,7 @@ export const Mayknow = ()=>{
    <div className="flex flex-col items-center">
      <div className="flex w-[100%] gap-2 pb-3  px-4">
       <div>
-        <img className=" min-w-[35px] max-w-[45px] mt-2 rounded-full  " src="https://scontent.fixc4-2.fna.fbcdn.net/v/t39.30808-6/281676737_3228104294144026_4381959379528061331_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=pm0vnn_e2M8AX_vUlZt&_nc_ht=scontent.fixc4-2.fna&oh=00_AfBXT_L7GF5nIhr4scrayoE4hRRShK2rJ3EUrvXxiJ0DYw&oe=65DDCC51" alt="" />
+        <img className=" min-w-[35px] max-w-[45px] mt-2 rounded-full  " src="https://scontent.fixc4-1.fna.fbcdn.net/v/t39.30808-6/415956459_3674174952870289_2433742899111164051_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6X3npMCItoAAX8zQzy1&_nc_ht=scontent.fixc4-1.fna&oh=00_AfCWG2T-EhCjDiDyRHHcxDhMEl62VYbmg_-fdoKl26m9KA&oe=65E520B4" alt="" />
       </div>
       <div className="flex flex-col gap-1">
     <p className="text-lg font-semibold ">Ji Gupta</p>

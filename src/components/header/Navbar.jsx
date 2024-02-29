@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaHome, FaBriefcase, FaBell } from "react-icons/fa";
@@ -33,8 +33,27 @@ const links = [
 ];
 
 const Navbar = () => {
+   
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+        setPrevScrollPos(currentScrollPos);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos]);
+  
+
+
+
     return (
-        <header className="w-full bg-white h-[60px] flex justify-center text-sm items-center sticky top-0">
+        <header className={`w-full bg-white h-[60px] flex justify-center text-sm items-center sticky ${visible?"top-0":"top-[-100px]"}  `}>
             <nav className="flex justify-between items-center max-w-6xl  w-full mx-auto px-5  ">
                 <section className="  flex gap-[20px] w-[30%]   ">
                     <Link to={"/"}>
