@@ -17,7 +17,7 @@ const Profile = () => {
     <div>
       <Navbar />
       <div className="w-[100%] mt-5 gap-x-7  gap-y-2    flex justify-center flex-wrap px-0  md:px-16">
-        <section className=" flex-grow-0 pb-2 z-[-1]   sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
+        <section className=" flex-grow-0 pb-2    sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
           <div className="w-[100%] bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden   ">
             <div className="">
               <img
@@ -35,7 +35,7 @@ const Profile = () => {
 
               <div className="flex justify-between mx-6">
                 <div className="w-[45%]  text-stone-600 ">
-                  <p className="font-bold text-xl">Abhay Singh</p>
+                  <p className="font-bold text-xl hover:underline ">Abhay Singh</p>
                   <p className="text-sm">
                     {" "}
                     C++ || DSA || javascript || Reactjs
@@ -143,7 +143,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="w-[100%] mt-3 bg-stone-300 h-[1px] "></div>
-            <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
+            <div className="text-lg text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
               Show all analytics &rarr;
             </div>
           </div>
@@ -182,7 +182,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="w-[100%] mt-3 bg-stone-300 h-[1px] "></div>
-            <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
+            <div className="text-lg text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
               Show all 5 Resources &rarr;
             </div>
           </div>
@@ -195,7 +195,7 @@ const Profile = () => {
                   337 followers
                 </p>
               </div>
-              <button className="text-blue-600 h-10 px-3 hover:bg-blue-100 justify-center items-center text-lg  border-blue-400 rounded-full border-2">
+              <button className="text-blue-600 h-8 px-3 hover:bg-blue-100 justify-center items-center text-md  border-blue-400 rounded-full border-[1px]">
                 Create a post
               </button>
             </div>
@@ -203,7 +203,7 @@ const Profile = () => {
             <Activity />
             <Activity />
             <Activity />
-            <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
+            <div className="text-lg text-stone-500 hover:bg-stone-200 py-3 font-semibold flex justify-center ">
               Show all Posts &rarr;
             </div>
           </div>
@@ -261,7 +261,7 @@ const Profile = () => {
 
           <Skills/>
           <Skills/>
-          <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold  flex justify-center ">
+          <div className="text-lg text-stone-500 hover:bg-stone-200 py-3 font-semibold  flex justify-center ">
               Show all 10 Skills &rarr;
             </div>
             
@@ -281,7 +281,7 @@ const Profile = () => {
            </div>
              
           
-          <div className="text-xl text-stone-500 hover:bg-stone-200 py-3 font-semibold  flex justify-center ">
+          <div className="text-lg text-stone-500 hover:bg-stone-200 py-2 mt-2 font-semibold  flex justify-center ">
               Show all companies &rarr;
             </div>
             
@@ -389,17 +389,17 @@ export const Experience =() =>{
     <div>
       <div className="flex  mt-4 gap-2">
     <div>
-      <img className="w-[63px] mt-1" src="https://media.licdn.com/dms/image/D560BAQFTCiOSD64-qQ/company-logo_200_200/0/1707867955109/astit_ai_logo?e=1717027200&v=beta&t=ZsdN_JuvqYPVV9HsOltVcN841CVvtk_AZsPrMNVTf54" alt="" />
+      <img className="w-[53px] mt-1" src="https://media.licdn.com/dms/image/D560BAQFTCiOSD64-qQ/company-logo_200_200/0/1707867955109/astit_ai_logo?e=1717027200&v=beta&t=ZsdN_JuvqYPVV9HsOltVcN841CVvtk_AZsPrMNVTf54" alt="" />
     </div>
     <div className="text-stone-500">
       <div>
-      <p className="text-xl font-semibold">HR Manager</p>
-      <p className="text-md">Astita.AI &#x2022; Full-time</p>
-      <p className="text-md text-stone-400">Jan 2024 - Present &#x2022; 2 mos</p>
-      <p className="text-md text-stone-400">India</p>
+      <p className="text-lg font-semibold">HR Manager</p>
+      <p className="text-sm">Astita.AI &#x2022; Full-time</p>
+      <p className="text-sm text-stone-400">Jan 2024 - Present &#x2022; 2 mos</p>
+      <p className="text-sm text-stone-400">India</p>
       </div>
       <div className="py-4">
-       <p className="flex items-center text-sm text-stone-800"><MdDiamond/> Leadership, Android Studio and +8 skills</p>
+       <p className="flex items-center text-sm  text-stone-800"><MdDiamond/><span className="hover:text-blue-700 hover:underline "> Leadership, Android Studio and +8 skills</span></p>
       </div>
     </div>
    
@@ -418,13 +418,13 @@ export const Education =() =>{
     </div>
     <div className="text-stone-500">
       <div>
-      <p className="text-xl font-semibold">Panjab University</p>
-      <p className="text-md">Bachelor of Engineering - BE, Informatin Technology</p>
-      <p className="text-md text-stone-400">july 2020 - jun 2024</p>
-      <p className="text-md text-stone-600">Grade : 8.02 GPA</p>
+      <p className="text-lg font-semibold">Panjab University</p>
+      <p className="text-sm">Bachelor of Engineering - BE, Informatin Technology</p>
+      <p className="text-sm text-stone-400">july 2020 - jun 2024</p>
+      <p className="text-sm text-stone-600">Grade : 8.02 GPA</p>
       </div>
-      <div className="py-4">
-       <p className="flex items-center text-sm text-stone-800"><MdDiamond/>Presentation, Leadership, Android Studio and +8 skills</p>
+      <div className="py-4 ">
+       <p className="flex   items-center text-sm text-stone-800"><MdDiamond/> <span className="hover:underline hover:text-blue-700">Presentation, Leadership, Android Studio and +8 skills </span></p>
       </div>
     </div>
 
@@ -438,14 +438,14 @@ export const Education =() =>{
 export const Skills =() =>{
   return(
    <div className="text-stone-600 mt-5 mx-5 ">
-    <p className="text-xl font-semibold pl-1">Web Development</p>
+    <p className="text-lg font-semibold pl-1">Web Development</p>
      <div className="flex  gap-2 mb-2 items-center  ">
     <div>
       <img className="w-[33px] mt-1" src="https://seeklogo.com/images/P/panjab-university-logo-97FD0EFE4E-seeklogo.com.png" alt="" />
     </div>
    
     
-      <p className="text-md font-semibold">Panjab University</p>
+      <p className="text-sm font-semibold">Panjab University</p>
       
  
   </div>
@@ -462,9 +462,9 @@ export const Interests =() =>{
     <img className="w-[45px] mt-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="" />
    </div>
    <div className="flex flex-col gap-1">
-    <p className="text-xl font-bold ">Microsoft</p>
-    <p className="text-md"> 21,755,693 followers</p>
-    <button className=" border-stone-700 rounded-full px-3 text-lg border-[1px] ">&#x2713;Following</button>
+    <p className="text-lg font-bold ">Microsoft</p>
+    <p className="text-sm"> 21,755,693 followers</p>
+    <button className=" border-stone-700 rounded-full px-3 text-md border-[1px] ">&#x2713;Following</button>
    </div>
    
     
@@ -476,15 +476,15 @@ export const Interests =() =>{
 
 export const Peoples = ()=>{
   return (
-   <div className="flex flex-col items-center">
+   <div className="flex flex-col mt-3 items-center">
      <div className="flex w-[100%] gap-2 pb-3  px-4">
       <div>
         <img className="w-[55px] mt-2 rounded-full  " src="https://media.licdn.com/dms/image/D5635AQE9LcW9SjIpXA/profile-framedphoto-shrink_200_200/0/1706232575750?e=1709600400&v=beta&t=NV_j0CwsMr0P9s0qpTlL6fXinceLfsBfuRxHDMRY3Ro" alt="" />
       </div>
-      <div className="flex flex-col gap-1">
-    <p className="text-lg font-semibold ">Gupta Ji</p>
+      <div className="flex flex-col">
+    <p className="text-md font-semibold ">Gupta Ji</p>
     <p className="text-sm"> Student at UIETH Punjab University </p>
-    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full  border-[2px] ">+Follow</button>
+    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full text-sm  border-[1px] hover:bg-stone-100 ">+Follow</button>
    </div>
    
 
@@ -497,15 +497,15 @@ export const Peoples = ()=>{
 
 export const Mayknow = ()=>{
   return (
-   <div className="flex flex-col items-center">
+   <div className="flex flex-col mt-3 items-center">
      <div className="flex w-[100%] gap-2 pb-3  px-4">
       <div>
         <img className=" min-w-[35px] max-w-[45px] mt-2 rounded-full  " src="https://scontent.fixc4-1.fna.fbcdn.net/v/t39.30808-6/415956459_3674174952870289_2433742899111164051_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6X3npMCItoAAX8zQzy1&_nc_ht=scontent.fixc4-1.fna&oh=00_AfCWG2T-EhCjDiDyRHHcxDhMEl62VYbmg_-fdoKl26m9KA&oe=65E520B4" alt="" />
       </div>
-      <div className="flex flex-col gap-1">
-    <p className="text-lg font-semibold ">Ji Gupta</p>
+      <div className="flex flex-col gap-0">
+    <p className="text-md font-semibold ">Ji Gupta</p>
     <p className="text-sm"> Student at Punjab University Swami Sarvanand Giri Regional center Hoshiarpur  </p>
-    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full px-1 text- border-[2px] flex items-center gap-1 justify-center "><MdPersonAddAlt1 size={15} /> connect </button>
+    <button className=" text-stone-500 w-[100px] border-stone-500 rounded-full px-1 text-sm border-[1px] flex items-center gap-1 justify-center hover:bg-stone-100 "><MdPersonAddAlt1 size={15} /> connect </button>
    </div>
    
 
