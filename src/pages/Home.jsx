@@ -150,9 +150,9 @@ const Home = () => {
             </div>
           </div>
           <div className=" my-4 mb-[23px] h-fit  ">
-            <Post name={"name"} age={"age"} note={"note"} />
-            <Post name={"name"} age={"age"} note={"note"} />
-            <Post name={"name"} age={"age"} note={"note"} />
+            <Post  />
+            <Post  />
+            <Post  />
           </div>
         </section>
 
@@ -179,7 +179,7 @@ const Home = () => {
 
 export default Home;
 
-export const Post = ({ name, age, note }) => {
+export const Post = () => {
   return (
     <div className=" rounded-md box my-3 ">
       <div className="px-3  py-4 flex f justify-between">
@@ -270,7 +270,7 @@ export const Post = ({ name, age, note }) => {
             />
             <span>Like</span>
           </button>
-          <button className="flex gap-1 opacity-70 hover:bg-slate-300 w-[20%] justify-center py-3 rounded-sm ">
+          <button className="flex gap-1 px-1 opacity-70 hover:bg-slate-300 w-[25%] lg:w-[20%]  justify-center py-3 rounded-sm ">
             <img
               className="w-[20px] "
               src="https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/comment-dots-512.png"

@@ -53,7 +53,7 @@ const Navbar = () => {
 
 
     return (
-        <header className={`w-full bg-white z-[1000] h-[60px] flex justify-center text-sm items-center sticky ${visible?"top-0":"top-[-100px]"}  `}>
+        <header className={`w-full bg-white z-[1000] h-[60px] flex justify-center text-sm items-center sticky shadow-sm shadow-stone-300 ${visible?"top-0":"top-[-100px]"}  `}>
             <nav className="flex justify-between items-center max-w-6xl  w-full mx-auto px-5  ">
                 <section className="  flex gap-[20px] w-[30%]   ">
                     <Link to={"/"}>

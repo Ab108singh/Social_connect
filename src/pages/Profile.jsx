@@ -57,7 +57,7 @@ const Profile = () => {
                       src="https://media.licdn.com/dms/image/D560BAQFTCiOSD64-qQ/company-logo_200_200/0/1707867955109/astit_ai_logo?e=1717027200&v=beta&t=ZsdN_JuvqYPVV9HsOltVcN841CVvtk_AZsPrMNVTf54"
                       alt=""
                     />
-                    <span>Astita.ai</span>
+                    <span className="hover:text-blue-700 hover:underline">Astita.ai</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <img
@@ -65,7 +65,7 @@ const Profile = () => {
                       src="https://puchd.ac.in/asset/pu-logo.png"
                       alt=""
                     />
-                    <span>Panjab University</span>
+                    <span className="hover:text-blue-700 hover:underline">Panjab University</span>
                   </div>
                 </div>
               </div>

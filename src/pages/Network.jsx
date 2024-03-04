@@ -153,7 +153,7 @@ export default Network;
 
  export const Post=({name,age,note})=>{
  return (
-  <div className="box pb-5 m-1 w-[45%] sm:w-[44%] md:w-[30%]  rounded-md box  ">
+  <div className="box pb-5 m-1 w-[45%] sm:w-[44%] md:w-[30%] hover:shadow-md hover:shadow-stone-500  rounded-md box  ">
      <div className="w-[100%]">
               <div className="h-[80px]">
                 <img
