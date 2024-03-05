@@ -192,23 +192,23 @@ export const Message =()=>{
   return (
      <div className="mt-4">
         <div className="flex items-center justify-between">
-          <div className="w-[40%] h-[1px]  bg-stone-300 "></div>
-          <div className="w-[20%] flex justify-center text-stone-500 ">14 january</div>
-          <div className="w-[40%] h-[1px] bg-stone-300 "></div>
+          <div className="w-[43%] h-[1px]  bg-stone-300 "></div>
+          <div className="w-[14%] text-xs flex justify-center text-stone-500 ">14 january</div>
+          <div className="w-[43%] h-[1px] bg-stone-300 "></div>
         </div>
 
 
-       <div className="flex gap-2 my-3">
-      <img className="w-[45px] h-[45px] rounded-full mt-3 " src="https://media.licdn.com/dms/image/D5635AQGMamUQI86UhA/profile-framedphoto-shrink_800_800/0/1705067957696?e=1710169200&v=beta&t=cGzMnTxUOpzjdru7LmG6SzP-tfoJclPOj5nqNSInvCM" alt="" />
+       <div className="flex gap-2 my-4">
+      <img className="w-[45px] h-[45px] rounded-full  " src="https://media.licdn.com/dms/image/D5635AQGMamUQI86UhA/profile-framedphoto-shrink_800_800/0/1705067957696?e=1710169200&v=beta&t=cGzMnTxUOpzjdru7LmG6SzP-tfoJclPOj5nqNSInvCM" alt="" />
      <div>
-       <p className="font-semibold hover:underline hover:text-blue-600">Jitesh meena</p>
+       <p className="font-semibold text-sm hover:underline hover:text-blue-600">Jitesh meena</p>
         <p className="text-sm text-stone-500">Lorem ipsum harum id ut? Molestiae, voluptatibus esse?</p>
      </div>
      </div>
-       <div className="flex gap-2 my-3">
-      <img className="w-[45px] h-[45px] rounded-full mt-3 " src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4" alt="" />
+       <div className="flex gap-2 my-4">
+      <img className="w-[45px] h-[45px] rounded-full  " src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4" alt="" />
      <div>
-       <p className="font-semibold hover:underline hover:text-blue-600 ">Abhay Singh</p>
+       <p className="font-semibold text-sm hover:underline hover:text-blue-600 ">Abhay Singh</p>
         <p className="text-sm text-stone-500">Lorem ipsum harum id ut?   esse?</p>
      </div>
      </div>
