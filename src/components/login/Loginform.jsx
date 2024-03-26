@@ -25,7 +25,9 @@ const Loginform = () => {
   
   axios.post(url, postData)
       .then(response => {
-          console.log('Response:', response.data.data);
+        console.log("login successfull")
+          console.log('Response:', response.data.data.token);
+          localStorage.setItem('token' , response.data.data.token)
           makelogin(true);
          nevigate('/');
       })

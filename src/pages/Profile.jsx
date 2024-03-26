@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/header/Navbar";
@@ -12,7 +12,9 @@ import {
 } from "react-icons/fa";
 import { IoPeople, IoPeopleCircle } from "react-icons/io5";
 import { MdDiamond ,MdPersonAddAlt1 } from "react-icons/md";
+import { LoginContext } from "../components/LoginContext";
 const Profile = () => {
+  const { admin } = useContext(LoginContext);
   return (
     <div>
       <Navbar />
@@ -28,17 +30,17 @@ const Profile = () => {
               <div className="flex flex-col pl-6">
                 <img
                   className="w-[20%] rounded-full mt-[-10%] border-white border-2"
-                  src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
+                  src={admin.profilePic}
                   alt=""
                 />
               </div>
 
               <div className="flex justify-between mx-6">
                 <div className="w-[45%]  text-stone-600 ">
-                  <p className="font-bold text-xl hover:underline ">Abhay Singh</p>
+                  <p className="font-bold text-xl hover:underline ">{admin.username}</p>
                   <p className="text-sm">
                     {" "}
-                    C++ || DSA || javascript || Reactjs
+                   {admin.bio || "student at somewhere"}
                   </p>
                   <p className="text-xs text-stone-500">
                     Varansi, Uttar Pradesh, India{" "}

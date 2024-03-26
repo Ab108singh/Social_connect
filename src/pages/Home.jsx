@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Navbar from "../components/header/Navbar";
 import "./Home.css";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { FaBookmark, FaPeopleArrows, FaSave } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
+import { LoginContext } from "../components/LoginContext";
+import Postpage from "../components/post/Postpage";
 
 const Home = () => {
+  const[pop,setPop] = useState(false);
+  const { admin } = useContext(LoginContext);
+ 
+  console.log("url", window.location.pathname);
+
+
   return (
-    <div className="">
+    
+    <div className={`${pop&&"h-screen overflow-hidden"}`}>
    
       <Navbar />
 
@@ -29,16 +38,16 @@ const Home = () => {
               </div>
               <div className="flex flex-col  items-center">
                 <img
-                  className="w-[80px] rounded-full mt-[-46px] border-white border-2"
-                  src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
+                  className="w-[80px] h-[80px] rounded-full mt-[-46px] border-white border-2"
+                  src={admin.profilePic}
                   alt=""
                 />
                 
                 <Link to={'/profile'} className="font-bold hover:underline text-stone-600">
-                  Abhay Singh
+                 {admin.username}
                 </Link>
                 <span className="text-xs text-stone-400">
-                  C++ || DSA || Javascript || Reactjs
+                  {admin.bio}
                 </span>
               </div>
             </div>
@@ -113,11 +122,11 @@ const Home = () => {
 
         {/* this is second section in home component --------------------------------------- */}
         <section className=" homescrollbar  w-[100%]   sm:w-[75%] md:w-[55%] lg:w-[40%] xl:w-[40%] xl:max-w-[550px] ">
-          <div id="post" className="box h-[120px] rounded-md ">
+          <div id="post" onClick={()=>setPop(true)}  className="box  h-[120px] rounded-md ">
             <div className="h-[70px] flex justify-between gap-2 items-center px-4 ">
               <img
                 className="w-[55px] rounded-full h-[55px] "
-                src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
+                src={admin.profilePic}
                 alt=""
               />
               <div className="w-[88%] h-[50px] hover:bg-slate-200 border border-slate-400 rounded-full "></div>
@@ -173,6 +182,11 @@ const Home = () => {
           <Footer />
         </section>
       </div>
+      
+      {
+        pop&&<Postpage  setPop={setPop}/>
+        
+      }
     </div>
   );
 };

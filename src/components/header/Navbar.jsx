@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaBriefcase, FaBell } from "react-icons/fa";
 import { IoChatboxEllipses, IoPeople } from "react-icons/io5";
+import { LoginContext } from "../LoginContext";
 
 const links = [
     {
@@ -22,7 +23,7 @@ const links = [
     },
     {
         text: "Messages",
-        path: "/massaging",
+        path: "/messaging", // Corrected path spelling
         icon: <IoChatboxEllipses size={21} />,
     },
     {
@@ -33,27 +34,31 @@ const links = [
 ];
 
 const Navbar = () => {
-   
+    const { pathname } = useLocation(); // Get the current URL pathname
+    const [path, setPath] = useState('/'); // Initialize path with the current URL pathname
+    
+    useEffect(() => {
+        setPath(pathname); // Update the path state whenever pathname changes
+    }, [pathname]);
+
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+    const { admin } = useContext(LoginContext);
   
     useEffect(() => {
-      const handleScroll = () => {
-        const currentScrollPos = window.pageYOffset;
-        setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-        setPrevScrollPos(currentScrollPos);
-      };
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+        };
   
-      window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
   
-      return () => window.removeEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos]);
-  
-
-
 
     return (
-        <header className={`w-full bg-white z-[1000] h-[60px] flex justify-center text-sm items-center sticky shadow-sm shadow-stone-300 ${visible?"top-0":"top-[-100px]"}  `}>
+        <header className={`w-full bg-white z-[1000] h-[60px] flex justify-center text-sm items-center sticky shadow-sm shadow-stone-300 ${visible?"top-0":"top-[-100px]"} z-0 `}>
             <nav className="flex justify-between items-center max-w-6xl  w-full mx-auto px-5  ">
                 <section className="  flex gap-[20px] w-[30%]   ">
                     <Link to={"/"}>
@@ -79,18 +84,14 @@ const Navbar = () => {
 
                 <section className="flex items-center justify-end gap-5 flex-1 divide-x-2 divide-slate-200 divide-solid">
                     <section className="flex gap-[20px] sm:gap-[25px] md:gap-4 lg:gap-7  w-[73%] justify-around sm:justify-end">
-                        {links.map((link) => {
-                            return (
-                                <Link to={link.path}>
-                                    <div className="nav2 opacity-60 hover:opacity-100 flex flex-col items-center  ">
-                                        <div>{link.icon}</div>
-                                        <div className="hidden sm:block">
-                                            {link.text}
-                                        </div>
-                                    </div>
-                                </Link>
-                            );
-                        })}
+                        {links.map((link) => (
+                            <Link to={link.path} key={link.path}>
+                                <div className={`nav2 ${path === link.path ? "opacity-100" : "opacity-60"} hover:opacity-100 flex flex-col items-center ${path === link.path ? "active" : ""}`}>
+                                    <div>{link.icon}</div>
+                                    <div className="hidden sm:block">{link.text}</div>
+                                </div>
+                            </Link>
+                        ))}
                     </section>
 
                     <section className="md:flex w-[26%] gap-2 md:gap-2 lg:gap-5 justify-end hidden   items-center">
@@ -98,7 +99,7 @@ const Navbar = () => {
                             <div className="flex flex-col items-center opacity-60 hover:opacity-100">
                                 <img
                                     className="rounded-full w-[25px] hidden sm:inline-block"
-                                    src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4"
+                                    src={admin.profilePic}
                                     alt=""
                                 />
                                 <div>Me&#9660;</div>

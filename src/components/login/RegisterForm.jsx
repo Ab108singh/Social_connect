@@ -26,7 +26,7 @@ const RegisterForm = () => {
             })
             .catch(err => {
                 if (err.response && err.response.data && err.response.data.error) {
-                    alert("User is already registered. Please login.");
+                    alert(err.response.data.error);
                 } else {
                     console.log('Unknown Error:', err);
                 }
