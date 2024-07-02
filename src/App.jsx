@@ -24,36 +24,36 @@ const App = () => {
     const nevigate = useNavigate();
     const url = 'http://localhost:8000/api/v1/user';
    let token = localStorage.getItem('token');
-    useEffect(() => {
-        // Fetch data from the server
+    // useEffect(() => {
+    //     // Fetch data from the server
        
-        axios.get(url, {
-            headers: {
-                authorization:"Bearer "+token
-            }
-        })
-        .then(response => {
-            // Handle successful response
-            console.log('Data:', response.data);
+    //     axios.get(url, {
+    //         headers: {
+    //             authorization:"Bearer "+token
+    //         }
+    //     })
+    //     .then(response => {
+    //         // Handle successful response
+    //         console.log('Data:', response.data);
             
-            makelogin(false);
-            setAdmin(response.data)
-        })
-        .catch(error => {
-            makelogin(false);
-           nevigate('/login')
+    //         makelogin(false);
+    //         setAdmin(response.data)
+    //     })
+    //     .catch(error => {
+    //         makelogin(false);
+    //        nevigate('/login')
            
-        })
-        .finally(() => {
-            // Once the request is completed (whether success or failure), set isLoading to false
-            setIsLoading(false);
-        });
-    }, []); // Empty dependency array indicates that useEffect should run only once before application starts
+    //     })
+    //     .finally(() => {
+    //         // Once the request is completed (whether success or failure), set isLoading to false
+    //         setIsLoading(false);
+    //     });
+    // }, []); // Empty dependency array indicates that useEffect should run only once before application starts
     
-    if (isLoading) {
-        // Render a loading indicator while data is being fetched
-        return <div>Loading...</div>;
-    }
+    // if (isLoading) {
+    //     // Render a loading indicator while data is being fetched
+    //     return <div>Loading...</div>;
+    // }
 
     return (
         <div className="  ">
