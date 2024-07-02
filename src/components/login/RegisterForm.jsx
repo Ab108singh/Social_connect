@@ -11,26 +11,28 @@ const RegisterForm = () => {
    const nevigate = useNavigate()
 
     const makeRegister = () => {
-        const postData = {
-            username: name,
-            email: email,
-            password: pass,
-        };
+        nevigate('/login');
+
+        // const postData = {
+        //     username: name,
+        //     email: email,
+        //     password: pass,
+        // };
         
-        const url = 'http://localhost:8000/api/v1/user/register';
+        // const url = 'http://localhost:8000/api/v1/user/register';
         
-        axios.post(url, postData)
-            .then(response => {
-                console.log('Response:', response.data.data);
-               nevigate('/login');
-            })
-            .catch(err => {
-                if (err.response && err.response.data && err.response.data.error) {
-                    alert(err.response.data.error);
-                } else {
-                    console.log('Unknown Error:', err);
-                }
-            });
+        // axios.post(url, postData)
+        //     .then(response => {
+        //         console.log('Response:', response.data.data);
+        //        nevigate('/login');
+        //     })
+        //     .catch(err => {
+        //         if (err.response && err.response.data && err.response.data.error) {
+        //             alert(err.response.data.error);
+        //         } else {
+        //             console.log('Unknown Error:', err);
+        //         }
+        //     });
     }
 
     const makeChange = (e) => {

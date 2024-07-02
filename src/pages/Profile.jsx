@@ -21,23 +21,24 @@ const Profile = () => {
       <div className="w-[100%] mt-5 gap-x-7  gap-y-2    flex justify-center flex-wrap px-0  md:px-16">
         <section className=" flex-grow-0 pb-2    sm:flex-grow max-w-[550px]   md:max-w-[800px]    w-[99%] md:w-[50%] ">
           <div className="w-[100%] bg-white shadow-slate-400  shadow-sm rounded-lg overflow-hidden   ">
-            <div className="">
+            <div className="h-full">
               <img
-                className="h-[55%] w-[100%]"
-                src="https://media.licdn.com/dms/image/D5616AQEdi3ggnWOcPQ/profile-displaybackgroundimage-shrink_350_1400/0/1705070102947?e=1714003200&v=beta&t=TA6Qn-3mJxxXiZgslsuQiHhclCFpvrrdvu9KifOYfYQ"
+                className="h-[15%] w-[100%]"
+                src={'./public/3.jpg'}
                 alt=""
               />
-              <div className="flex flex-col pl-6">
+              <div className="   pl-6">
                 <img
-                  className="w-[20%] rounded-full mt-[-10%] border-white border-2"
-                  src={admin.profilePic}
+                className="w-[20%] h-[15vw] sm:h-[11vw] md:h-[10vw] lg:h-[10vw] xl:h-[9vw] mt-[-10%]  rounded-full  border-white border-2"
+                  src={'./public/1.jpg'}
                   alt=""
+                  
                 />
               </div>
 
               <div className="flex justify-between mx-6">
                 <div className="w-[45%]  text-stone-600 ">
-                  <p className="font-bold text-xl hover:underline ">{admin.username}</p>
+                  <p className="font-bold text-xl hover:underline ">Abcd Singh</p>
                   <p className="text-sm">
                     {" "}
                    {admin.bio || "student at somewhere"}
@@ -481,7 +482,7 @@ export const Peoples = ()=>{
    <div className="flex flex-col mt-3 items-center">
      <div className="flex w-[100%] gap-2 pb-3  px-4">
       <div>
-        <img className="w-[55px] mt-2 rounded-full  " src="https://media.licdn.com/dms/image/D5635AQE9LcW9SjIpXA/profile-framedphoto-shrink_200_200/0/1706232575750?e=1709600400&v=beta&t=NV_j0CwsMr0P9s0qpTlL6fXinceLfsBfuRxHDMRY3Ro" alt="" />
+        <img className="w-[55px] h-[45px] mt-2 rounded-full  " src={'./public/4.png'} alt="" />
       </div>
       <div className="flex flex-col">
     <p className="text-md font-semibold ">Gupta Ji</p>
@@ -502,7 +503,7 @@ export const Mayknow = ()=>{
    <div className="flex flex-col mt-3 items-center">
      <div className="flex w-[100%] gap-2 pb-3  px-4">
       <div>
-        <img className=" min-w-[35px] max-w-[45px] mt-2 rounded-full  " src="https://scontent.fixc4-1.fna.fbcdn.net/v/t39.30808-6/415956459_3674174952870289_2433742899111164051_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6X3npMCItoAAX8zQzy1&_nc_ht=scontent.fixc4-1.fna&oh=00_AfCWG2T-EhCjDiDyRHHcxDhMEl62VYbmg_-fdoKl26m9KA&oe=65E520B4" alt="" />
+        <img className=" min-w-[35px] max-w-[45px] h-[45px] max-h-[45px] mt-2 rounded-full  " src={'./public/2.jpg'} alt="" />
       </div>
       <div className="flex flex-col gap-0">
     <p className="text-md font-semibold ">Ji Gupta</p>

@@ -114,11 +114,16 @@ const Network = () => {
            <Invitations/>
            <Invitations/>
            <Invitations/>
+           <Invitations/>
+           <Invitations/>
         
 
         </div>
            <div className=" box my-4 mb-[23px] gap-3 content-start h-fit flex flex-wrap justify-center  ">
             <div className="w-[100%] pl-4 pt-2 ">People in the IT Services and IT Consulting industry you may know -</div>
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
+             <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
              <Post name={"name"} age={"age"} note={"note"} />
@@ -158,7 +163,7 @@ export default Network;
               <div className="h-[80px]">
                 <img
                   className="h-[70px] w-[100%]"
-                  src="https://media.licdn.com/dms/image/D5616AQEdi3ggnWOcPQ/profile-displaybackgroundimage-shrink_350_1400/0/1705070102947?e=1714003200&v=beta&t=TA6Qn-3mJxxXiZgslsuQiHhclCFpvrrdvu9KifOYfYQ"
+                  src={'./public/3.jpg'}
                   alt=""
                 />
               </div>
@@ -198,7 +203,7 @@ export const Invitations =()=>{
   <div className="px-3  py-4 flex flex-wrap justify-between">
    
    <div className="flex gap-4 w-[100%] max-w-[500px] ">
-    <img className="w-[64px] h-[64px] rounded-full  " src="https://media.licdn.com/dms/image/D5603AQFAn4SR7YSE9g/profile-displayphoto-shrink_800_800/0/1707575650870?e=1714003200&v=beta&t=Sy4Q_5AqFjvV53TbzCRJpD-P0n24yPf5nr6n2OCsd2Q" alt="" />
+    <img className="w-[64px] h-[64px] rounded-full  " src={'./public/2.jpg'} alt="" />
     <div>
       <p className="text-slate-900"><span className="font-bold hover:underline">Prakhar Gautam</span> <span>follows you and is inviting you to connect</span></p>
       <p className="text-slate-600 text-sm">Student at University of Allahabad</p>

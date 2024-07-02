@@ -98,8 +98,8 @@ const Navbar = () => {
                         <Link to={"/profile"} className="">
                             <div className="flex flex-col items-center opacity-60 hover:opacity-100">
                                 <img
-                                    className="rounded-full w-[25px] hidden sm:inline-block"
-                                    src={admin.profilePic}
+                                    className="rounded-full w-[25px] h-[25px] hidden sm:inline-block"
+                                    src={'./public/1.jpg'}
                                     alt=""
                                 />
                                 <div>Me&#9660;</div>

@@ -32,22 +32,22 @@ const Home = () => {
               <div className="h-[80px]">
                 <img
                   className="h-[70px] w-[100%]"
-                  src="https://media.licdn.com/dms/image/D5616AQEdi3ggnWOcPQ/profile-displaybackgroundimage-shrink_350_1400/0/1705070102947?e=1714003200&v=beta&t=TA6Qn-3mJxxXiZgslsuQiHhclCFpvrrdvu9KifOYfYQ"
+                  src={'./public/3.jpg'}
                   alt=""
                 />
               </div>
               <div className="flex flex-col  items-center">
                 <img
                   className="w-[80px] h-[80px] rounded-full mt-[-46px] border-white border-2"
-                  src={admin.profilePic}
+                  src={'./public/1.jpg'}
                   alt=""
                 />
                 
                 <Link to={'/profile'} className="font-bold hover:underline text-stone-600">
-                 {admin.username}
+                 Abcd Singh
                 </Link>
                 <span className="text-xs text-stone-400">
-                  {admin.bio}
+              software developer | c++ | DSA
                 </span>
               </div>
             </div>
@@ -126,7 +126,7 @@ const Home = () => {
             <div className="h-[70px] flex justify-between gap-2 items-center px-4 ">
               <img
                 className="w-[55px] rounded-full h-[55px] "
-                src={admin.profilePic}
+                src={'./public/1.jpg'}
                 alt=""
               />
               <div className="w-[88%] h-[50px] hover:bg-slate-200 border border-slate-400 rounded-full "></div>
@@ -200,7 +200,7 @@ export const Post = () => {
         <div className="flex gap-4 w-[70%] max-w-[500px] ">
           <img
             className="w-[44px] h-[44px] rounded-full  "
-            src="https://media.licdn.com/dms/image/D4D03AQHGNAxeyJhZbQ/profile-displayphoto-shrink_800_800/0/1685972237021?e=1714003200&v=beta&t=R9ApILvWq0cu9Shk7zCe-mYQVp30ciNVdgaCXtE2xS0"
+            src={'./public/4.png'}
             alt=""
           />
           <div>
@@ -242,7 +242,7 @@ export const Post = () => {
         <div className="flex justify-center bg-black">
           <img
             className="h-[500px] "
-            src="https://media.licdn.com/dms/image/D5622AQFhiKpxDVY4pg/feedshare-shrink_800/0/1707750885720?e=1711584000&v=beta&t=i0bk20mirW2trlwOLc8-qGrdnk37RiRCFtCC3VOSu2g"
+            src={'./public/5.jpeg'}
             alt=""
           />
         </div>

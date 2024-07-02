@@ -136,7 +136,7 @@ export const People = () => {
     <div className="w-[100%] py-2 px-1 hover:bg-slate-200 gap-2 flex">
       <img
         className="w-[55px] h-[55px] rounded-full mt-3 "
-        src="https://media.licdn.com/dms/image/D5635AQGMamUQI86UhA/profile-framedphoto-shrink_800_800/0/1705067957696?e=1710169200&v=beta&t=cGzMnTxUOpzjdru7LmG6SzP-tfoJclPOj5nqNSInvCM"
+        src={'./public/2.jpg'}
         alt=""
       />
       <div className="flex-grow">
@@ -175,7 +175,7 @@ export const Messagebox =()=>{
     </div>
     <div className="h-[90%] overflow-x-hidden overflow-y-auto px-4 py-2 ">
      
-   <img className="w-[60px] rounded-full mx-3 my-2 " src="https://media.licdn.com/dms/image/D5635AQGMamUQI86UhA/profile-framedphoto-shrink_800_800/0/1705067957696?e=1710169200&v=beta&t=cGzMnTxUOpzjdru7LmG6SzP-tfoJclPOj5nqNSInvCM" alt="" />
+   <img className="w-[60px] rounded-full mx-3 my-2 " src={'./public/2.jpg'} alt="" />
    <p className="font-semibold hover:underline">Jitesh meena</p>
    <p className="text-sm pb-3 text-stone-500">Pursuing Information Technology @ UIETH,Panjab University | Javascript, React.Js, Node.Js, Python | Web Developer | MERN |</p>
   <Message/>
@@ -199,14 +199,14 @@ export const Message =()=>{
 
 
        <div className="flex gap-2 my-4">
-      <img className="w-[45px] h-[45px] rounded-full  " src="https://media.licdn.com/dms/image/D5635AQGMamUQI86UhA/profile-framedphoto-shrink_800_800/0/1705067957696?e=1710169200&v=beta&t=cGzMnTxUOpzjdru7LmG6SzP-tfoJclPOj5nqNSInvCM" alt="" />
+      <img className="w-[45px] h-[45px] rounded-full  " src={'./public/2.jpg'} alt="" />
      <div>
        <p className="font-semibold text-sm hover:underline hover:text-blue-600">Jitesh meena</p>
         <p className="text-sm text-stone-500">Lorem ipsum harum id ut? Molestiae, voluptatibus esse?</p>
      </div>
      </div>
        <div className="flex gap-2 my-4">
-      <img className="w-[45px] h-[45px] rounded-full  " src="https://media.licdn.com/dms/image/D4D03AQFnvQ35gVoE0Q/profile-displayphoto-shrink_400_400/0/1702142323383?e=1714003200&v=beta&t=8MfbndI9hGrNrHum-unVU4ApFKnRLfcL5V1oVaZByl4" alt="" />
+      <img className="w-[45px] h-[45px] rounded-full  " src={'./public/1.jpg'} alt="" />
      <div>
        <p className="font-semibold text-sm hover:underline hover:text-blue-600 ">Abhay Singh</p>
         <p className="text-sm text-stone-500">Lorem ipsum harum id ut?   esse?</p>

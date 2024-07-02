@@ -15,26 +15,26 @@ const Loginform = () => {
 
 
   const login =()=>{
-
-    const postData = {
-      email: email,
-      password: pass,
-  };
+    nevigate('/');
+  //   const postData = {
+  //     email: email,
+  //     password: pass,
+  // };
   
-  const url = 'http://localhost:8000/api/v1/user/login';
+  // const url = 'http://localhost:8000/api/v1/user/login';
   
-  axios.post(url, postData)
-      .then(response => {
-        console.log("login successfull")
-          console.log('Response:', response.data.data.token);
-          localStorage.setItem('token' , response.data.data.token)
+  // axios.post(url, postData)
+  //     .then(response => {
+  //       console.log("login successfull")
+  //         console.log('Response:', response.data.data.token);
+  //         localStorage.setItem('token' , response.data.data.token)
           makelogin(true);
-         nevigate('/');
-      })
-      .catch(err => {
+  //        nevigate('/');
+  //     })
+  //     .catch(err => {
     
-          alert(err.response.data.error)
-      });
+  //         alert(err.response.data.error)
+  //     });
 
   }
   
