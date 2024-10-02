@@ -3,7 +3,8 @@ import Footer from "../../pages/Footer";
 
 import { Link ,useNavigate } from "react-router-dom";
 import { LoginContext } from "../LoginContext";
-import axios from 'axios'
+
+
 
 const Loginform = () => {
   const [show, setShow] = useState(false);
@@ -16,25 +17,10 @@ const Loginform = () => {
 
   const login =()=>{
     nevigate('/');
-  //   const postData = {
-  //     email: email,
-  //     password: pass,
-  // };
+ 
   
-  // const url = 'http://localhost:8000/api/v1/user/login';
-  
-  // axios.post(url, postData)
-  //     .then(response => {
-  //       console.log("login successfull")
-  //         console.log('Response:', response.data.data.token);
-  //         localStorage.setItem('token' , response.data.data.token)
           makelogin(true);
-  //        nevigate('/');
-  //     })
-  //     .catch(err => {
-    
-  //         alert(err.response.data.error)
-  //     });
+  
 
   }
   

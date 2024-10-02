@@ -24,13 +24,13 @@ const Profile = () => {
             <div className="h-full">
               <img
                 className="h-[15%] w-[100%]"
-                src={'./public/3.jpg'}
+                src={'/3.jpg'}
                 alt=""
               />
               <div className="   pl-6">
                 <img
                 className="w-[20%] h-[15vw] sm:h-[11vw] md:h-[10vw] lg:h-[10vw] xl:h-[9vw] mt-[-10%]  rounded-full  border-white border-2"
-                  src={'./public/1.jpg'}
+                  src={'/1.jpg'}
                   alt=""
                   
                 />

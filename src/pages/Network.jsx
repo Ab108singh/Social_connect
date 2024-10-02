@@ -163,7 +163,7 @@ export default Network;
               <div className="h-[80px]">
                 <img
                   className="h-[70px] w-[100%]"
-                  src={'./public/3.jpg'}
+                  src={'/3.jpg'}
                   alt=""
                 />
               </div>
@@ -203,7 +203,7 @@ export const Invitations =()=>{
   <div className="px-3  py-4 flex flex-wrap justify-between">
    
    <div className="flex gap-4 w-[100%] max-w-[500px] ">
-    <img className="w-[64px] h-[64px] rounded-full  " src={'./public/2.jpg'} alt="" />
+    <img className="w-[64px] h-[64px] rounded-full  " src={'/2.jpg'} alt="" />
     <div>
       <p className="text-slate-900"><span className="font-bold hover:underline">Prakhar Gautam</span> <span>follows you and is inviting you to connect</span></p>
       <p className="text-slate-600 text-sm">Student at University of Allahabad</p>

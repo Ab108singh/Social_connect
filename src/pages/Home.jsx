@@ -12,7 +12,7 @@ const Home = () => {
   const[pop,setPop] = useState(false);
   const { admin } = useContext(LoginContext);
  
-  console.log("url", window.location.pathname);
+  
 
 
   return (
@@ -32,14 +32,14 @@ const Home = () => {
               <div className="h-[80px]">
                 <img
                   className="h-[70px] w-[100%]"
-                  src={'./public/3.jpg'}
+                  src={'/3.jpg'}
                   alt=""
                 />
               </div>
               <div className="flex flex-col  items-center">
                 <img
                   className="w-[80px] h-[80px] rounded-full mt-[-46px] border-white border-2"
-                  src={'./public/1.jpg'}
+                  src={'/1.jpg'}
                   alt=""
                 />
                 
@@ -126,7 +126,7 @@ const Home = () => {
             <div className="h-[70px] flex justify-between gap-2 items-center px-4 ">
               <img
                 className="w-[55px] rounded-full h-[55px] "
-                src={'./public/1.jpg'}
+                src={'/1.jpg'}
                 alt=""
               />
               <div className="w-[88%] h-[50px] hover:bg-slate-200 border border-slate-400 rounded-full "></div>
@@ -200,7 +200,7 @@ export const Post = () => {
         <div className="flex gap-4 w-[70%] max-w-[500px] ">
           <img
             className="w-[44px] h-[44px] rounded-full  "
-            src={'./public/4.png'}
+            src={'/4.png'}
             alt=""
           />
           <div>
@@ -242,7 +242,7 @@ export const Post = () => {
         <div className="flex justify-center bg-black">
           <img
             className="h-[500px] "
-            src={'./public/5.jpeg'}
+            src={'/5.jpeg'}
             alt=""
           />
         </div>

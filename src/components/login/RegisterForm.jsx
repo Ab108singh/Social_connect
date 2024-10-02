@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../../pages/Footer";
 import { Link , useNavigate } from "react-router-dom";
-import axios from 'axios';
+
 
 const RegisterForm = () => {  
     const [show, setShow] = useState(false);
@@ -13,26 +13,7 @@ const RegisterForm = () => {
     const makeRegister = () => {
         nevigate('/login');
 
-        // const postData = {
-        //     username: name,
-        //     email: email,
-        //     password: pass,
-        // };
-        
-        // const url = 'http://localhost:8000/api/v1/user/register';
-        
-        // axios.post(url, postData)
-        //     .then(response => {
-        //         console.log('Response:', response.data.data);
-        //        nevigate('/login');
-        //     })
-        //     .catch(err => {
-        //         if (err.response && err.response.data && err.response.data.error) {
-        //             alert(err.response.data.error);
-        //         } else {
-        //             console.log('Unknown Error:', err);
-        //         }
-        //     });
+       
     }
 
     const makeChange = (e) => {
