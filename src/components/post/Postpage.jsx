@@ -10,13 +10,13 @@ const Postpage = ({ setPop }) => {
   };
 
   return (
-    <div style={{ backgroundColor: "rgba(0,0,0,0.3)" }}  onClick={() => setPop(false)} className="flex justify-center w-screen h-screen absolute top-0 z-30 pt-10 ">
+    <div style={{ backgroundColor: "rgba(0,0,0,0.3)" }}  onClick={() => setPop(false)} className="flex justify-center w-screen h-screen absolute top-10 z-30 pt-10 ">
         <div onClick={stopPropagation} className='w-[98%] max-w-[800px] z-40 h-[600px] rounded-md   bg-stone-100'>
           <div className='flex justify-between'>
-           <div className='flex m-4 gap-2 p-2 hover:bg-stone-300 rounded-lg'>
+           <div className='flex m-4 gap-2 p-2  rounded-lg'>
            <img
                 className="w-[55px] rounded-full h-[55px] "
-                src={admin.profilePic}
+                src="/1.jpg"
                 alt=""
               />
             <div>
